@@ -35,4 +35,6 @@ The site has 4 breakpoints. What follows are the changes at each breakpoint:
         - Site max size
 
 Fonts - Google Fonts
-    <link href='http://fonts.googleapis.com/css?family=Tinos:400,700,400italic|Merriweather+Sans:800,400italic,400' rel='stylesheet' type='text/css'>
+```
+<link href='http://fonts.googleapis.com/css?family=Tinos:400,700,400italic|Merriweather+Sans:800,400italic,400' rel='stylesheet' type='text/css'>
+```
