@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Columbia Museum of Art - Demo Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link href='http://fonts.googleapis.com/css?family=Tinos:400,700,400italic|Merriweather+Sans:800,400italic,400' rel='stylesheet' type='text/css'> -->
+    <link rel="stylesheet" href="css/cma-demo-styles.css">
+
+    <!--script language="javascript" type="text/javascript" src="cma-demo-js.js"></script -->
+    <script language="javascript" type="text/javascript">
+		    function findMe() {
+		        var searchWord = document.getElementById('Page_Search_Box').value;
+
+		        window.find(searchWord);
+		    }
+    </script>
+
+</head>
+
+<body>
+    <div class="pageWrapper">
+        <header class="pageHeader">
+            <h1 class="h1de">
+					<a href="#">Columbia Museum of Art</a>
+				</h1>
+            <nav class="siteNav siteNavTop" id="Site_Nav">
+                <h2 class="screenReaderHeading">Columbia Musuem of Art Site Navigation</h2>
+               
+                <ul class="navList">
+                    <li class="navItem">
+                    	<a href="#" class="navLink">Visit</a>
+                    </li>
+                   <li class="navItem">
+                    	<a href="#" class="navLink">Learn</a>
+                    </li>
+                    <li class="navItem">
+                    	<a href="#" class="navLink">Art</a>
+                    </li>
+                    <li class="navItem">
+                    	<a href="#" class="navLink">Events</a>
+                    </li>
+                    <li class="navItem">
+                    	<a href="#" class="navLink">Give &amp; Join</a>
+                    </li>
+                    <li class="navItem">
+                    	<a href="#" class="navLink">About</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+
+		
+
+
+            <form action="" class="pageModule">
+                <h2 class="screenReaderHeading">Page Search</h2>
+                <input type="text" onfocus="findMe();" class="searchBox formBox" id="Page_Search_Box" name="Page_Search_Box" />
+                <button type="button" onclick="findMe();" class="button searchButton formBox" id="Page_Search_Button" name="Page_Search_Button">Search CMA</button>
+            </form>
+        </header>
+
+        <main class="pageContent">
+
+            <header class="contentHeader pageModule">
+                <h1 class="contentTitle">Membership Registration</h1>
+                <p class="subHeading">Be Part of the Columbia Museum of Art</p>
+            </header>
+
+            <section class="contentMainBlurb pageModule">
+                <h2>All CMA Memberships Include the Following Benefits:</h2>
+                <ul class="contentList">
+                    <li>Free unlimited admission for one year</li>
+                    <li>Discounts on concert tickets, classes, and lectures.</li>
+                    <li>Free admission to over <a href="#" class="inlineLink">80 museums</a> across the Southeast.</li>
+                    <li>Exclusive invitations to special events, including Exhibition Members' Opening Parties.</li>
+                    <li>Member Appreciation Day - Several times a year, the museum offers exclusive members special savings in the gift shop, opportunities to bring a friend, and more.</li>
+                    <li>10% discount in the Museum Shop.</li>
+                </ul>
+            </section>
+
+            <section class="pageModule regFormArea">
+	            <form id="Registration_Form">
+	                <h2 class="screenReaderHeading">Member Registration Form</h2>
+	                <fieldset class="regFormGroup">
+	                	<legend><h3 class="formSectionTitle">Tell Us About Yourself</h3></legend>
+
+	                    <label class="regLabel" for="formFirstName">
+	                    	<span class="regLabelText">First Name</span>
+	                        
+	                        <input type="text" class="regInput formBox" id="formFirstName" name="formFirstName" />
+
+	                    </label>
+	                    <label class="regLabel" for="formLastName">
+	                    	<span class="regLabelText">Last Name</span>
+	                        <input type="text" class="regInput formBox" id="formLastName" name="formLastName" />
+	                    </label>
+	                    <label class="regLabel" for="formAddress">
+	                    	<span class="regLabelText">Address</span>
+	                        <input type="text" class="regInput formBox" id="formAddress" name="formAddress" />
+	                    </label>
+	                    <label class="regLabel" for="formUserName">
+	                    	<span class="regLabelText">Choose a User Name</span>
+	                        <input type="text" class="regInput formBox" id="formUserName" name="formUserName" />
+	                    </label>
+	                    <label class="regLabel" for="formEmail">
+	                    	<span class="regLabelText">email</span>
+	                        <input type="text" class="regInput formBox" id="formEmail" name="formEmail" />
+	                    </label>
+	                    <label class="regLabel" for="formConfirmEmail">
+	                    	<span class="regLabelText">Confirm email</span>
+	                        <input type="text" class="regInput formBox" id="formConfirmEmail" name="formConfirmEmail" />
+	                    </label>
+
+	                </fieldset>
+
+	                <fieldset class="regFormGroup">
+	                	<legend><h3 class="formSectionTitle">Choose Your Membership Level</h3></legend>
+	                    <ul class="regFormPlanList">
+	                        <li>
+		                        <dl>
+			                        <dt class="regFormPlansTitles">Individual <span class="regFormPrices">$50</span>
+			                        </dt>
+			                        <dd>Standard Membership Benefits.</dd>
+			                        <dd>Admission benefits for one adult.</dd>
+			                    </dl>
+			                </li>
+
+		                    <li>
+			                    <dl>
+			                        <dt class="regFormPlansTitles">Family <span class="regFormPrices">$75</span>
+			                        </dt>
+			                        <dd>Admission benefits for two adults and all children (18 and under).</dd>
+			                        <dd>Priority Registration and 20% discount on summer camp and art classes.</dd>
+			                        <dd>Free admission to all Family Fun Events.</dd>
+			                    </dl>
+			                </li>
+
+							<li>
+								<dl>
+			                        <dt class="regFormPlansTitles">Patron <span class="regFormPrices">$250</span>
+			                        </dt>
+			                        <dd>All benefits of Family Membership.</dd>
+			                        <dd>Free admission to almost <a href="#" class="inlineLink">600 museums</a> in North America, including over <a href="#" class="inlineLink">80 museums</a> across the Southeast.</dd>
+			                        <dd>Free admission for two guests per visit.</dd>
+			                        <dd>Printed and Mailed Collections quarterly magazine and opening reception invitations.</dd>
+								</dl>
+							</li>
+	                    </ul>
+
+	                </fieldset>
+
+	                <fieldset class="regFormGroup membershipLevelsGroup">
+	                	<legend><h3 class="formSectionTitle">Membership Level</h3></legend>
+
+	                    <label class="" for="Individual_Membership_Choice">
+	                        <input type="radio" name="memberShipLevels" id="Individual_Membership_Choice" />
+	                        Individual Membership <span class="regFormPrices">$50</span>
+	                    </label>
+
+	                    <label class="" for="Family_MemberShip_Choice">
+	                        <input type="radio" name="memberShipLevels" id="Family_MemberShip_Choice" />
+	                        Family Membership <span class="regFormPrices">$75</span>
+	                    </label>
+
+	                    <label class="" for="Patron_Membership_Choice">
+	                        <input type="radio" name="memberShipLevels" id="Patron_Membership_Choice" />
+	                        Patron <span class="regFormPrices">$250</span>
+	                    </label>
+
+	                </fieldset>
+
+	                <fieldset class="regFormGroup additionalOptionsGroup">
+	                	<legend><h3 class="formSectionTitle">Additional Options</h3></legend>
+
+	                    <label class="" for="Columbia_Design_League_Choice">
+	                        <input type="checkbox" name="Columbia_Design_League_Choice" id="Columbia_Design_League_Choice" />
+	                        Columbia Design League <span class="regFormPrices">$100</span>
+	                    </label>
+
+	                    <label class="" for="Contemporaries_Choice">
+	                        <input type="checkbox" name="Contemporaries_Choice" id="Contemporaries_Choice" />
+	                        Contemporaries <span class="regFormPrices">$100</span>
+	                    </label>
+
+	                    <label class="" for="Friends_of_AAAC">
+	                        <input type="checkbox" name="Friends_of_AAAC" id="Friends_of_AAAC" />
+	                        Friends of African American Art &amp; Culture <span class="regFormPrices">$100</span>
+	                    </label>
+
+	                </fieldset>
+
+	                <button type="submit" class="button formBox regFormSubmit" id="Registration_Form_Submit" name="Reg_Form_Submit">Complete Registration</button>
+	            </form>
+	        </section>
+	            	
+            <section class="pageModule">
+
+                <h2 class="screenReaderHeading">Secondary Site Navigation</h2>
+                <nav class="siteNav secondarySiteNav">
+
+                    <dl>
+                        <dt>
+                            <h3 class="navHeading">Tickets</h3>
+                        </dt>
+                        <dd>
+                            <ul class="navList">
+                                <li class="navItem">
+                                	<a href="#" class="navLink">Upcoming Events</a>
+                                </li>
+                                <li class="navItem">
+                                	<a href="#" class="navLink">Chamber Music on Main</a>
+                                </li>
+                                <li class="navItem">
+                                	<a href="#" class="navLink">Talks &amp; Tours</a>
+                                </li>
+                                <li class="navItem">
+                                	<a href="#" class="navLink">Art School for Adults</a>
+                                </li>
+                                <li class="navItem">
+                                	<a href="#" class="navLink">Art School for Children</a>
+                                </li>
+                                <li class="navItem">
+                                	<a href="#" class="navLink">Affiliate Group Events</a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+
+                    <dl>
+                        <dt>
+                            <h3 class="navHeading">Membership</h3>
+                        </dt>
+                        <dd>
+                            <ul class="navList">
+                                <li class="navItem">
+                                    <a href="#" class="navLink">Join</a>
+                                </li>
+                                <li class="navItem">
+                                    <a href="#" class="navLink">Premiere Society Membership</a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+
+                        <dt>
+                            <h3 class="navHeading">Donations</h3>
+                        </dt>
+
+                        <dd>
+                            <ul class="navList">
+                                <li class="navItem">
+                                    <a href="#" class="navLink">Annual Fund</a>
+                                </li>
+                            </ul>
+                        </dd>
+
+                    </dl>
+                </nav>
+
+            </section>
+
+
+        </main>
+
+		<footer class="pageFooter">
+			<address class="footerAddress">
+				<span class="footerLine addressTitle">Columbia Museum of Art</span>
+				<span class="footerLine addressPOBox">PO Box 2068 Columbia, SC 29202</span>
+				<span class="footerLine addressStreet">1515 Main Street
+					<span class="addressPhone">803.799.2810</span>
+				</span>
+				
+
+			</address>
+
+            <nav class="siteNav">
+
+                <h2 class="screenReaderHeading">Additional Links</h2>
+                <ul class="navList">
+                    <li class="footerItem navItem"><a href="#" class="navLink footerLink">Upcoming Events</a></li>
+                    <li class="footerItem navItem"><a href="#" class="navLink footerLink">Chamber Music on Main</a></li>
+                    <li class="footerItem navItem"><a href="#" class="navLink footerLink">Talks &amp; Tours</a></li>
+                    <li class="footerItem navItem"><a href="#" class="navLink footerLink">Art School for Adults</a></li>
+                    <li class="footerItem navItem"><a href="#" class="navLink footerLink">Art School for Children</a></li>
+                    <li class="footerItem navItem"><a href="#" class="navLink footerLink">Affiliate Group Events</a></li>
+                </ul>
+
+            </nav>
+
+		</footer>
+
+    </div>
+</body>
+
+</html>

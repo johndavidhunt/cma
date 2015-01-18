@@ -1,0 +1,554 @@
+ 
+/*
+*/
+/*
+*/
+/*
+*/
+
+/*ToDos*/
+/*check that I linked up the google fonts stuff */
+/**/
+
+/* #da2f42 : logo red */
+/* #edeced : form gray */
+
+/* Tinos:400,700,400italic|Merriweather+Sans:800,400italic,400 */
+
+
+/*
+*/
+/*  testing  */
+/*
+*/
+* {
+/*	outline: 2px dotted red;
+	box-shadow: 2px 6px 6px #444;*/
+}
+html {
+	background-color: green;
+}
+
+
+/*
+*/
+
+
+body {
+	/*font-family: 'Tinos', 'Times New Roman', serif;*/
+	font-family: 'Tinos';
+	font-size: 0.85em;
+	background-color: #FFF;
+	padding: 0;
+	margin: 0;
+}
+form {
+	background-color: #edeced;
+	padding: 4%;
+	margin: 20px auto;
+}
+fieldset {
+	border: 0;
+}
+footer {
+	text-align: center;
+}
+
+
+h1,h2,h3,h4,h5,h6,
+legend {
+	/*font-family: 'Merriweather Sans', arial, helvetica, sans-serif;*/
+	font-family: 'Merriweather Sans';
+}
+h1 {
+	/*font-size: 1.85em;*/
+}
+h2 {
+	/*font-size: 1.25em;*/
+}
+a {
+	color: #da2f42;
+}
+label {
+	display: inline-block;
+	margin-top: 14px;
+}
+
+
+nav ul {
+	list-style: none;
+}
+nav a {
+	text-decoration: none;
+}
+form input {
+	font-size: 2em;
+	/*border: 1px inset #FFF;*/
+	border: 0;
+	box-shadow: 
+				inset 0px 1px 6px -2px #000;
+	border-radius: 4px 4px 3px 3px;
+}
+
+/*
+*/
+
+.screenReaderHeading {
+	display: none;
+}
+
+/*button,*/
+.button {
+
+	display: block;
+	box-sizing: border-box;
+	font-family: 'Tinos';
+	font-size: 1em;
+
+	background-color: #da2f42;
+	color: #fff;
+	padding: .5em 0;
+	width: 100%;
+	margin: 12px 0 0;
+
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 
+				0px 0px 2px rgba(255,255,255, 0.4),
+				0px 1px 0px rgba(0,0,0, 0.5),
+				1px 2px 1px rgba(0,0,0, 0.3);
+
+	/*border: 1px solid rgba(255,255,255, 0.25);*/
+/*	box-shadow: 
+				inset 0px 0px 2px 3px rgba(255,255,255, 0.1),
+					  1px 2px 6px -2px #333;*/
+	border: 0;
+	border-radius: 3px;
+}
+
+/*
+*/
+
+
+
+
+.pageWrapper {
+	overflow: hidden;
+}
+.pageHeader, .pageContent {
+
+	margin: auto 8px;
+	padding: 0 7px;
+}
+.pageHeader {}
+
+/*
+*/
+
+.h1de {
+	/*font-size: .75em;*/
+	background: url(../images/logo.jpg) no-repeat center center;
+	background-size: contain;
+	margin: 7% 5%;
+}
+.h1de a {
+	color: transparent;
+	/*381 x 105*/
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	/*padding: 5% 0;*/
+	white-space: nowrap;
+	text-decoration: none;
+	vertical-align: middle;
+}
+.siteNav {}
+.siteNav dd {
+	margin-left: 0;
+}
+.siteNavTop {}
+.screenReaderHeading {}
+.navList {
+	margin: auto 0;
+	padding: 0;
+}
+.navItem {}
+.navLink {
+	display: inline-block;
+	/*font-size: 0.85em;*/
+	width:100%;
+	text-align: center;
+	padding: 12px 0;
+	border: 1px solid #cecece;
+	border-bottom-width: 0px;
+}
+li:first-of-type .navLink{
+	border-top-left-radius: 3px; 
+	border-top-right-radius: 3px;
+}
+li:last-of-type .navLink{
+	border-bottom-width: 1px;
+	border-bottom-left-radius: 3px; 
+	border-bottom-right-radius: 3px;
+}
+
+/*
+*/
+/*
+*/
+
+
+.pageModule {
+	border-top: 1px solid #cecece;
+	margin-top: 32px;
+	padding-top: 12px;
+
+}
+form.pageModule {
+	border-top: 0;
+}
+.searchBox {
+	
+}
+.searchButton {
+	
+}
+.formBox {
+	display: block;
+	width: 100%;
+}
+.pageContent {
+	padding-bottom: 24px;
+}
+
+.contentHeader {}
+.contentTitle {}
+.subHeading {
+	color: #888;
+	/*font-weight: 400;*/
+	font-family: 'Merriweather Sans';
+	/*font-size: 0.85em;*/
+	text-transform: uppercase;
+}
+.contentMainBlurb {
+	border-top: 0;
+}
+.contentList {
+	padding-left: 10px;
+}
+.contentList li {
+	margin-bottom: 10px;
+}
+.inlineLink {}
+.regFormArea {
+	padding-top:24px;
+}
+.regFormFieldset {
+	margin-bottom: 36px;
+}
+.formSectionTitle {}
+.regLabel {
+	
+}
+.regLabelText {}
+.regLabelText:after {
+	content:':';
+}
+.regInput {
+	font-size: 2.5em;
+	margin-top: 6px;
+}
+.regFormGroup {
+	margin: 0;
+	margin-top: 45px;
+	padding: 0;
+}
+.regFormGroup:first-of-type {
+	margin-top: 0px;
+}
+.regFormGroup:last-of-type {
+	padding-bottom: 45px;
+	border-bottom: 1px solid #cecece;
+}
+.regFormPlanList {
+	padding-left: 0;
+	list-style: none;
+}
+.regFormPlanList dt,
+.regFormPlanList dd,
+.regFormPlanList li {
+	background-color: #FFF;
+	margin-left: 0;
+	margin-bottom: 12px;
+}
+.regFormPlanList li {
+	width: 90%;
+	padding: 5%;
+}
+.regFormPlanList dl {
+	width: 100%;
+}
+.regFormPlanList dd {
+	display: list-item;
+	margin-left: 10%;
+	width: 90%;
+	list-style-position: inside;
+	list-style: disc;
+	
+}
+.regFormPlanList dt {
+	text-align: center;
+}
+
+.regFormPlansTitles {
+	font-size: 1.17em;
+	font-family: 'Merriweather Sans';
+	font-weight: 700;
+}
+.regFormSubmit {
+	font-size: 1.25em;
+	padding: .75em 0;
+}
+.regFormPrices {}
+.navHeading {}
+.pageFooter {
+	background-color: #333;
+	padding-bottom: 24px;
+}
+.footerAddress {
+	color: #EEE;
+	font-style: normal;
+	font-size: 1.25em;
+	padding: 45px 0;
+}
+.footerLine {
+	display: inline-block;
+	width: 100%;
+
+}
+.addressTitle {}
+.addressPOBox {}
+.addressStreet {}
+.addressPhone {}
+.addressPhone:before {
+	content: ' | ';
+
+}
+.footerItem {
+
+}
+.footerLink,
+.footerLink:visited {
+	text-decoration: underline;
+	color: #60dbff;
+}
+
+
+
+/*
+*/
+/*
+*/
+/*
+*/
+
+@media screen {
+	.footerItem {
+		display: inline-block;
+		width: 46%;
+	}
+	.footerLink{
+		border: 0;
+	}
+
+
+}
+
+
+/*
+*/
+/*
+*/
+
+
+@media screen and (min-width: 660px) {
+	.pageWrapper {
+		padding: 0 3%;
+	}
+	form {
+		padding: 2%;
+	}
+	.h1de {
+		margin: 3% auto;
+	}
+	.h1de a {
+		padding: 2% 0;
+	}
+
+
+	.formBox {
+		display: inline-block;
+		width: 49%;
+		vertical-align: top;
+		margin-top: 0;
+	}
+	.searchBox,
+	.searchButton {
+		height: 32px;
+		margin-left: 2%;
+		vertical-align: middle;
+	}
+	.searchBox {
+		width: 65%; 
+	}
+	.searchButton {
+		width: 30%; 
+	}
+	.regLabel {
+		width: 48%;
+		margin-right: 3%;
+	}
+	.regLabel:nth-of-type(2n) {
+		margin-right: 0;
+	}
+	.regLabelText {
+		display: block;
+	}
+	.regInput {
+		width: 100%;
+	}
+	.additionalOptionsGroup,
+	.membershipLevelsGroup {
+		display: inline-block;
+		width: 49%;
+		vertical-align: top;
+	}
+
+	.additionalOptionsGroup label,
+	.membershipLevelsGroup label {
+		display: block;
+	}
+
+	.regFormSubmit {
+		width: 35%;
+		margin: 2%;
+		margin-left: 65%;
+	}
+
+	.footerItem {
+		width: auto;
+		padding: 0 12px;
+	}	
+	.secondarySiteNav {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.secondarySiteNav dl {
+		display: inline-block;
+		vertical-align: top;
+		width: 32%;
+	}
+	.secondarySiteNav .navItem {
+		width: auto;
+		padding: 0;
+		display: list-item;
+		width: auto;
+	
+	}
+	.secondarySiteNav .navLink {
+		text-align: left;
+		border: 0;
+		text-decoration: underline;
+		padding: 6px 0;
+	}
+}
+
+/*
+*/
+/*
+*/
+
+@media screen and (min-width: 840px) {
+
+
+}
+
+/*
+*/
+/*
+*/
+
+@media screen and (min-width: 1000px) {
+
+
+}
+
+/*
+*/
+/*
+*/
+
+@media screen and (min-width: 1280px) {
+
+
+}
+
+/*
+*/
+/*
+*/
+
+
+
+/*
+*/
+/*
+*/
+/*
+*/
+
+
+/*
+Columbia Museum of Art
+======================
+
+Demo site for The Iron Yard
+
+
+This design is for the New Member registration page of the Columbia Museum of Art Site.
+
+The site has 4 breakpoints. What follows are the changes at each breakpoint:
+
+    default ( no media queries ):
+        - site is 90% wide with 5% gutters on each side for mobile
+        - vertical, single column layout
+        - static navigation in single vertical column with large tappable areas
+        - Some elements text align left and others text align center
+
+    $mq1 ( 660px ):
+        - Search input and submit button line up horizontally
+        - User info form fields break into two vertical groups that stack horizonally
+        - Form "Complete Registration" button shrinks and aligns right with the form
+        - Secondary navigation items float into three columns
+        - "Membership levels" and "Additional Options" become two columns below the Membership levels descriptions.
+
+    $mq2 ( 840px ):
+        - Main navigation restructures to horizontal bar
+        - Search form shrinks to fixed size and relocates to upper right hand corner of site
+        - Logo relocates left and shrinks to fixed size
+        - Page title and subtitle emphasized with gray background
+        - Membership levels restructure to three column display
+
+    $mq3 ( 1000px ):
+        - Full layout shifts from single column to two column. Main page content in left-hand main column. Secondary links in smaller right sidebar.
+
+    $mq4 ( 1280px ):
+        - Site max size
+*/
+
+
+/*
+Fonts - Google Fonts
+```
+<link href='http://fonts.googleapis.com/css?family=Tinos:400,700,400italic|Merriweather+Sans:800,400italic,400' rel='stylesheet' type='text/css'>
+```*/
