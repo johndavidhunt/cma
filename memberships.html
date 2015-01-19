@@ -6,16 +6,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- <link href='http://fonts.googleapis.com/css?family=Tinos:400,700,400italic|Merriweather+Sans:800,400italic,400' rel='stylesheet' type='text/css'> -->
+    <link href='http://fonts.googleapis.com/css?family=Tinos:400,700,400italic|Merriweather+Sans:800,400italic,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/cma-demo-styles.css">
 
-    <!--script language="javascript" type="text/javascript" src="cma-demo-js.js"></script -->
-    <script language="javascript" type="text/javascript">
-		    function findMe() {
-		        var searchWord = document.getElementById('Page_Search_Box').value;
 
-		        window.find(searchWord);
+    <script type="text/javascript" src="./js/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript">
+	   
+	    var usejQ = false;
+
+	    function menuClicker() {
+		    if (usejQ) {
+		    	$('#Site_Navigation_Top_List').toggleClass('activeMenu')
+;		    } else {
+				activateMenu(elID('Site_Navigation_Top_List'));
 		    }
+	    }
+
+
     </script>
 
 </head>
@@ -24,28 +33,36 @@
     <div class="pageWrapper">
         <header class="pageHeader">
             <h1 class="h1de">
-					<a href="#">Columbia Museum of Art</a>
-				</h1>
+				<a href="#">Columbia Museum of Art</a>
+			</h1>
             <nav class="siteNav siteNavTop" id="Site_Nav">
                 <h2 class="screenReaderHeading">Columbia Musuem of Art Site Navigation</h2>
                
-                <ul class="navList">
-                    <li class="navItem">
+               <!-- <input type="checkbox" class="siteNavChx" /> -->
+
+                <ul class="navList" id="Site_Navigation_Top_List">
+                    <li class="navItem siteNavHamburgerItem">
+                   		<a href="#" class="navLink siteNavHamburgerLink " onclick="menuClicker();">
+                   			<span class="hamburgerMealIcon">&#8212;</span>
+                   			<span class="hamburgerMenuWord">Menu</span>
+                   		</a>
+                    </li>
+                   <li class="navItem topNavItem">
                     	<a href="#" class="navLink">Visit</a>
                     </li>
-                   <li class="navItem">
+                   <li class="navItem topNavItem">
                     	<a href="#" class="navLink">Learn</a>
                     </li>
-                    <li class="navItem">
+                    <li class="navItem topNavItem">
                     	<a href="#" class="navLink">Art</a>
                     </li>
-                    <li class="navItem">
+                    <li class="navItem topNavItem">
                     	<a href="#" class="navLink">Events</a>
                     </li>
-                    <li class="navItem">
+                    <li class="navItem topNavItem">
                     	<a href="#" class="navLink">Give &amp; Join</a>
                     </li>
-                    <li class="navItem">
+                    <li class="navItem topNavItem">
                     	<a href="#" class="navLink">About</a>
                     </li>
                 </ul>
@@ -59,7 +76,8 @@
             <form action="" class="pageModule" id="Search_Form" name="Search_Form">
                 <h2 class="screenReaderHeading">Page Search</h2>
                 <input type="text" onfocus="findMe();" class="searchBox formBox" id="Page_Search_Box" name="Page_Search_Box" />
-                <button type="button" onclick="findMe();" class="button searchButton formBox" id="Page_Search_Button" name="Page_Search_Button">Search CMA</button>
+                <input type="text" onfocus="this.blur();" class="non-semantic" id="Page_Search_Box_shadow" style="display:none;" name="Page_Search_Box_shadow" />
+                <button type="button" onclick="findMe(); return false;" class="button searchButton formBox" id="Page_Search_Button" name="Page_Search_Button">Search CMA</button>
             </form>
         </header>
 

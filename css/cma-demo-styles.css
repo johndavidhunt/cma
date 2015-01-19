@@ -145,6 +145,7 @@ form input {
 	border-radius: 3px;
 }
 
+
 /*
 */
 
@@ -181,6 +182,7 @@ form input {
 	text-decoration: none;
 	vertical-align: middle;
 }
+
 .siteNav {}
 .siteNav dd {
 	margin-left: 0;
@@ -192,6 +194,7 @@ form input {
 	padding: 0;
 }
 .navItem {}
+
 .navLink {
 	display: inline-block;
 	/*font-size: 0.85em;*/
@@ -211,6 +214,40 @@ li:last-of-type .navLink{
 	border-bottom-right-radius: 3px;
 }
 
+.topNavItem {
+	display: none;
+}
+.activeMenu .topNavItem {
+	display: list-item;
+}
+.activeMenu .siteNavHamburgerLink {
+	/*background-color: #60dbff;*/
+	box-shadow: 
+				inset 0px 0px 1px 4px #60dbff;
+}
+.siteNavHamburgerItem {
+	font-size: 1em;
+	text-transform: uppercase;
+}
+.siteNavHamburgerLink {
+	border-bottom-width: 1px;
+	border-radius: 3px;
+}
+.activeMenu .siteNavHamburgerLink {
+	border-bottom-width: 0;
+	border-radius: 3px 3px 0px 0px ;
+}
+.hamburgerMealIcon {
+	border-radius: 1px;
+	padding: 0 1px;
+	padding-bottom: 2px;
+	vertical-align: super;
+	font-weight: 500;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+
+	margin: 0 1em;
+}
 /*
 */
 /*
@@ -413,6 +450,9 @@ form.pageModule {
 		padding: 2% 0;
 	}
 
+	.siteNavHamburger {
+	}
+
 
 	.formBox {
 		display: inline-block;
@@ -498,7 +538,6 @@ form.pageModule {
 */
 
 @media screen and (min-width: 840px) {
-
 	.siteNav {
 		margin: 0 auto;
 		padding-left: 5%;
@@ -513,6 +552,10 @@ form.pageModule {
 		/*display: inline-block;*/
 		width: auto;
 		border: 0;
+	}
+
+	.siteNavHamburgerItem {
+		display: none;
 	}
 
 	.pageHeader {
