@@ -30,6 +30,7 @@ html {
 }
 
 
+
 /*
 */
 
@@ -69,6 +70,9 @@ h2 {
 a {
 	color: #da2f42;
 }
+a, button {
+	cursor: pointer;
+}
 label {
 	display: inline-block;
 	margin-top: 14px;
@@ -90,6 +94,21 @@ form input {
 	border-radius: 4px 4px 3px 3px;
 }
 
+/*
+*/
+/*
+*/
+
+.clearfix {
+  overflow: auto;
+}
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+/*
+*/
 /*
 */
 
@@ -343,6 +362,15 @@ form.pageModule {
 	color: #60dbff;
 }
 
+/*
+*/
+/*
+*/
+
+#Search_Form {
+
+}
+
 
 
 /*
@@ -442,6 +470,7 @@ form.pageModule {
 	.secondarySiteNav {
 		width: 100%;
 		margin: 0 auto;
+		border: 0;
 	}
 	.secondarySiteNav dl {
 		display: inline-block;
@@ -470,6 +499,71 @@ form.pageModule {
 
 @media screen and (min-width: 840px) {
 
+	.siteNav {
+		margin: 0 auto;
+		padding-left: 5%;
+		border: 1px solid #cecece;
+	}
+	.navItem {
+		display: inline-block;
+		width: auto;
+		padding: 1% 5%;
+	}
+	.navLink {
+		/*display: inline-block;*/
+		width: auto;
+		border: 0;
+	}
+
+	.pageHeader {
+		position: relative;
+	}
+	.h1de {
+		display: inline-block;
+		margin: 1% auto;
+		background-position: left center;
+	}
+	.h1de a {
+		font-size: 1.5em;
+	}
+	#Search_Form {
+		position: absolute;
+		top: 20%;
+		right: 0;
+		background-color: inherit;
+		margin: 0;
+		padding: 0;
+	}
+	.searchBox {
+		width: 64%;
+		width: calc(65% - 1ex);
+	}
+
+
+	.contentHeader {
+		background-color: #eee;
+		padding: 12px 5%;
+		margin-top: 12px;
+	}
+
+	.regFormPlanList li {
+		display: inline-block;
+		width: 27%;
+		padding: 3%;
+		vertical-align: top;
+	}
+
+	.secondarySiteNav {
+		border: 0;
+		padding-left: 0;
+	}		
+
+	.pageFooter .siteNav {
+		border: 0;
+	}
+	.pageFooter .navItem {
+		padding: 0 1%;
+	}
 
 }
 
@@ -479,6 +573,38 @@ form.pageModule {
 */
 
 @media screen and (min-width: 1000px) {
+	
+	.mainStuff {
+		display: inline-block;
+		max-width: 64%;
+	}
+	.sideStream {
+		display: inline-block;
+		max-width: 34%;
+		border-top-width: 0;
+		border-left: 1px solid #cecece;
+		vertical-align: top;
+		padding: 12px  2%;
+		margin-left: 2%;
+	}
+
+	.regFormPlanList {
+		background-color: #ccc;
+		padding: 2%;
+	}
+	.regFormPlanList li {
+		width: 26%;
+	}
+
+	.secondarySiteNav dl {
+		width: auto;
+		display: block;
+	}
+
+	.navItem {
+		padding: 0 5%;
+	}
+
 
 
 }
@@ -489,7 +615,10 @@ form.pageModule {
 */
 
 @media screen and (min-width: 1280px) {
-
+	.pageWrapper {
+		max-width: 1280px;
+		margin: 0 auto;
+	}
 
 }
 
